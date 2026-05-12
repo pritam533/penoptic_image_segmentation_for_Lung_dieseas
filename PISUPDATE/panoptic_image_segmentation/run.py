@@ -1,13 +1,3 @@
-# from flask import Flask
-# from routes.main import main
-
-# app = Flask(__name__, template_folder='templates')
-
-# # ✅ Register here (correct place)
-# app.register_blueprint(main)
-
-# if __name__ == "__main__":
-#     app.run()
 
 
 from flask import Flask
@@ -27,8 +17,8 @@ if __name__ == '__main__':
 
 app = Flask(
     __name__,
-    template_folder="app/templates",   # ✅ FIX
-    static_folder="app/static"         # ✅ FIX
+    template_folder="app/templates",   
+    static_folder="app/static"         
 )
 
 app.register_blueprint(main)
@@ -36,59 +26,3 @@ app.register_blueprint(main)
 if __name__ == "__main__":
     app.run()
 
-# from flask import Flask
-# # from routes.main import main
-# import os
-# app = Flask(__name__, 
-#             static_folder='app/static',  
-#             template_folder='frontend')
-
-
-# app.register_blueprint(main)
-# if __name__ == "__main__":
-#     port = int(os.environ.get("PORT", 10000))  # 🔥 IMPORTANT
-#     app.run(host="0.0.0.0", port=port)
-
-# if __name__ == "__main__":
-#     port = int(os.environ.get("PORT", 10000))
-#     app.run(host="0.0.0.0", port=port)
-# if __name__ == '__main__':
-#     app.run(debug=True)
-
-
-# import os
-
-# port = int(os.environ.get("PORT", 8080))
-
-# if __name__ == "__main__":
-#     app.run(host="0.0.0.0", port=port)
-
-
-
-# import os
-# from flask import Flask
-# from routes.main import main
-
-# app = Flask(__name__, 
-#             static_folder='app/static',  
-#             template_folder='frontend')
-# app.register_blueprint(main)
-
-# if __name__ == "__main__":
-#     port = int(os.environ.get("PORT", 10000))
-#     app.run(host="0.0.0.0", port=port)
-
-
-
-
-# import os
-# from flask import Flask
-# from routes.main import main
-
-# app = Flask(__name__)
-# app.register_blueprint(main)
-
-# if __name__ == "__main__":
-#     port = int(os.environ.get("PORT", 10000))
-#     app.run(host="0.0.0.0", port=10000)
->>>>>>> 9e837db5938e1c662c7047fad1cee2f7feadc306
